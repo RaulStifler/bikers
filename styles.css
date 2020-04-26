@@ -149,3 +149,28 @@ ul {
 .bg-2 {
     background: url('./images/super-bike.jpg') no-repeat center center/cover;
 }
+
+.social {
+    margin: 3rem;
+}
+
+.social p {
+    text-align: center;
+    font-size: 32px;
+    font-size: 2rem;
+    margin-bottom: 24px;
+    margin-bottom: 1.5rem;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.links a {
+    margin: 0 32px;
+    margin: 0 2rem;
+    font-size: 48px;
+    font-size: 3rem;
+}
