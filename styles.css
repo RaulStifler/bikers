@@ -20,7 +20,18 @@ a {
 ul {
     list-style: none;
 }
-
+.menu-btn {
+    position: absolute;
+    cursor: pointer;
+    top: 8px;
+    top: .5rem;
+    right: 32px;
+    right: 2rem;
+    font-size: 2rem;
+}
+.nav-menu-right {
+    margin-right: 3rem;
+}
 .container {
     width: 90%;
     margin: 0 auto;
@@ -206,10 +217,32 @@ ul {
 }
 
 @media screen and (max-width: 768px) {
+    .nav-menu {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: #2f3640;
+        width: 15rem;
+        height: 100%;
+        transform: translateX(-400px);
+        transition: transform .3s;
+        padding: 30px;
+        opacity: .9;
+    }
+    .show-menu {
+        transform: translateX(-20px);
+    }
     .cards-container {
         grid-template-columns: repeat(2, 1fr);
     }
     .content {
         width: 85%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .cards-container {
+        grid-template-columns: repeat(1, 1fr);
     }
 }
