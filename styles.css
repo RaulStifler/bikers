@@ -28,9 +28,7 @@ ul {
     right: 32px;
     right: 2rem;
     font-size: 2rem;
-}
-.nav-menu-right {
-    margin-right: 3rem;
+    display: none;
 }
 .container {
     width: 90%;
@@ -230,6 +228,12 @@ ul {
         padding: 30px;
         opacity: .9;
     }
+    .menu-btn {
+        display: block;
+    }
+    .nav-menu-right {
+        margin-right: 3rem;
+    }
     .show-menu {
         transform: translateX(-20px);
     }
@@ -239,10 +243,23 @@ ul {
     .content {
         width: 85%;
     }
+    .footer-links {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media screen and (max-width: 576px) {
     .cards-container {
         grid-template-columns: repeat(1, 1fr);
+    }
+    .cards-container img {
+        height: 250px;
+    }
+    .menu-btn {
+        right: 24px;
+        right: 1.5rem;
+    }
+    .content {
+        width: 100%;
     }
 }
